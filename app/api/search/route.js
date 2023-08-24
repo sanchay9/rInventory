@@ -15,7 +15,7 @@ export async function GET(req) {
   });
 
   const database = client.db("rinventory");
-  const inventory = database.collection("inventory");
+  const inventory = database.collection("products");
   const query = req.nextUrl.searchParams.get("query");
 
   try {

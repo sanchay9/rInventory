@@ -15,7 +15,7 @@ export async function DELETE(request) {
   });
 
   const database = client.db("rinventory");
-  const inventory = database.collection("inventory");
+  const inventory = database.collection("products");
   const body = await request.json();
 
   try {
