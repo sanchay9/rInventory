@@ -1,4 +1,4 @@
-# Inventory Management App
+# rInventory
 
 Efficiently manage your inventory with the Inventory Management App. This app, built using Next.js 13, React.js, Tailwind CSS, and MongoDB, empowers you to control, monitor the item availability and stock status in real time and make data-driven decisions.
 
