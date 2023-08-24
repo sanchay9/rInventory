@@ -1,34 +1,58 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Inventory Management App
+
+Efficiently manage your inventory with the Inventory Management App. This app, built using Next.js 13, React.js, Tailwind CSS, and MongoDB, empowers you to control stock, monitor the item availability and stock status in real time and make data-driven decisions.
+
+## Features
+
+- 📊 At-a-glance insights into current stock statistics
+- 📋 Intuitive stock management with add, edit, and delete functionalities
+- 🔒 Secure user authentication with NextAuth
+- 🔍 Search and navigation for quick access
+- ✨ Sleek and responsive design for seamless usage on all devices
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+   ```bash
+   git clone https://github.com/your-username/inventory-management-system.git
+   ```
+3. Install dependencies:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+   ```bash
+   cd rInventory
+   npm install
+   ```
+5. Set up MongoDB database and configure credentials with `.env.local` file in the root directory.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+   ```bash
+   MONGODB_USER=your-mongodb-connection-username
+   MONGODB_PASSWORD=your-mongodb-connection-password
+   ```
+7. Start the development server
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+   ```bash
+   npm run dev
+   ```
 
-## Learn More
+* Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-To learn more about Next.js, take a look at the following resources:
+* You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Tech Stack
 
-## Deploy on Vercel
+- [Next.js 13](https://nextjs.org/)
+- [React.js](https://react.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [MongoDB](https://www.mongodb.com/)
+- [NextAuth.js](https://next-auth.js.org/)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Contributions are welcome! Whether you're fixing a bug, improving the UI, or enhancing functionality, feel free to open a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
