@@ -11,12 +11,12 @@ export default function HomePage() {
             <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
               <div>
                 <h2 className="text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">
-                  Welcome to Stock Tracker
+                  Welcome to rInventory!
                 </h2>
                 <div className="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">
                   <p>
-                    This is a simple stock tracker app that allows you to add,
-                    edit, and delete stocks.<br></br>
+                    This is a simple inventory management app that allows you to
+                    add, edit, and delete stocks.<br></br>
                     This app is built with Next.js, ReactJS, MongoDB, and
                     Tailwind CSS.
                   </p>
