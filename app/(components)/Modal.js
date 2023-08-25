@@ -140,7 +140,7 @@ export default function Modal({ fetchProducts }) {
                       </div>
                       <div className="mb-4">
                         <label className="text-gray-800 mb-1 tracking-wide">
-                          Set Product Price
+                          Set Product Price (Rs.)
                         </label>
                         <input
                           type="text"

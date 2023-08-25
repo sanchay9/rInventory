@@ -111,12 +111,12 @@ export default function SearchPage() {
                     {dropdown.map((product) => {
                       return (
                         <div
-                          className="p-2 justify-between flex items-center rounded-lg hover:bg-gray-300"
+                          className="p-3 flex justify-between items-center rounded-lg hover:bg-gray-300"
                           key={product._id}
                         >
-                          <div>{product.slug}</div>
-                          <div>
-                            {product.quantity} {"available for Rs. "}
+                          <div className="w-80">{product.slug}</div>
+                          <div className="w-80">
+                            {product.quantity} {"available, Rs. "}
                             {product.price} {"each"}
                           </div>
                           <div>

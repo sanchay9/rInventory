@@ -85,7 +85,7 @@ export default function DisplayPage() {
                       </td>
                       <td className="border px-4 py-2">{product.quantity}</td>
                       <td className="border rounded-r-lg px-4 py-2">
-                        {product.price}
+                        Rs. {product.price}
                       </td>
                     </tr>
                   ))
