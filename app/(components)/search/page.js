@@ -142,7 +142,7 @@ export default function SearchPage() {
                                     product.quantity
                                   );
                                 }}
-                                disabled={loading || product.quantity <= 0}
+                                disabled={loading}
                                 className="bg-green-600 text-white px-1.5 my-1 rounded-full hover:bg-green-800 disabled:opacity-50"
                               >
                                 +
