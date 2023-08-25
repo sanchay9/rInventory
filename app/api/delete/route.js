@@ -5,7 +5,7 @@ const user = process.env.MONGODB_USER;
 const password = process.env.MONGODB_PASSWORD;
 const uri = `mongodb+srv://${user}:${password}@cluster0.rvc9ox2.mongodb.net/`;
 
-export async function DELETE(request) {
+export async function DELETE(req) {
   const client = new MongoClient(uri, {
     serverApi: {
       version: ServerApiVersion.v1,
@@ -14,9 +14,9 @@ export async function DELETE(request) {
     },
   });
 
-  const database = client.db("rinventory");
-  const inventory = database.collection("products");
-  const body = await request.json();
+  const database = client.db(process.env.MONGODB_DB);
+  const inventory = database.collection(process.env.MONGODB_COLLECTION);
+  const body = await req.json();
 
   try {
     const id = new ObjectId(body._id);

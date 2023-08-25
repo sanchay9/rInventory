@@ -17,7 +17,7 @@ export default function Modal({ fetchProducts }) {
     e.preventDefault();
 
     try {
-      await toast.promise(
+      toast.promise(
         fetch("/api/update", {
           method: "PUT",
           body: JSON.stringify(selectedProduct),
@@ -51,7 +51,7 @@ export default function Modal({ fetchProducts }) {
     e.preventDefault();
 
     try {
-      await toast.promise(
+      toast.promise(
         fetch("/api/delete", {
           method: "DELETE",
           body: JSON.stringify(selectedProduct),

@@ -14,8 +14,8 @@ export async function GET(req) {
     },
   });
 
-  const database = client.db("rinventory");
-  const inventory = database.collection("products");
+  const database = client.db(process.env.MONGODB_DB);
+  const inventory = database.collection(process.env.MONGODB_COLLECTION);
   const query = req.nextUrl.searchParams.get("query");
 
   try {

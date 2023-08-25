@@ -14,8 +14,8 @@ export async function GET(req) {
     },
   });
 
-  const database = client.db("rinventory");
-  const inventory = database.collection("products");
+  const database = client.db(process.env.MONGODB_DB);
+  const inventory = database.collection(process.env.MONGODB_COLLECTION);
 
   try {
     const query = {};
@@ -35,8 +35,8 @@ export async function POST(req) {
     },
   });
 
-  const database = client.db("rinventory");
-  const inventory = database.collection("products");
+  const database = client.db(process.env.MONGODB_DB);
+  const inventory = database.collection(process.env.MONGODB_COLLECTION);
   let body = await req.json();
 
   try {
@@ -56,8 +56,8 @@ export async function PUT(req) {
     },
   });
 
-  const database = client.db("rinventory");
-  const inventory = database.collection("products");
+  const database = client.db(process.env.MONGODB_DB);
+  const inventory = database.collection(process.env.MONGODB_COLLECTION);
   let body = await req.json();
 
   try {
