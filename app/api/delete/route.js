@@ -1,4 +1,4 @@
-import { MongoClient, ObjectId } from "mongodb";
+import { MongoClient, ObjectId, ServerApiVersion } from "mongodb";
 import { NextResponse } from "next/server";
 
 const user = process.env.MONGODB_USER;
@@ -23,7 +23,7 @@ export async function DELETE(req) {
     const filter = { _id: id };
     const product = await inventory.deleteOne(filter);
 
-    return NextResponse.json({ product });
+    return NextResponse.json({ success: true, product });
   } catch (error) {
     console.log(error);
   } finally {

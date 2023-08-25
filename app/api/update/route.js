@@ -1,4 +1,4 @@
-import { MongoClient, ObjectId } from "mongodb";
+import { MongoClient, ObjectId, ServerApiVersion } from "mongodb";
 import { NextResponse } from "next/server";
 
 const user = process.env.MONGODB_USER;
